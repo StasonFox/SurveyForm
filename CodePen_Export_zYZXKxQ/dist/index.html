@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Stason Fox</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Beer Survey</title>
+  </head>
+  <body>
+    <main id="main">
+      <h1 id="title">Beer Survey Form</h1>
+      <p id="description">This survey involves one very important topic: BEER!</p>
+      <form id="survey-form">
+        <label for="name" id="name-label"> Name:</label><br>     
+          <input id="name" type="text" placeholder="Enter your name" required><br><br>
+        <label for="email" id="email-label"> E-mail:</label><br>
+          <input id="email" type="email" placeholder="Enter your e-mail" required><br><br>  
+        <label for="number" id="number-label"> Age (21+):</label><br>
+          <input id="number" type="number" min="21" max="150" placeholder="Enter your age"><br><br>
+        <label for="dropdown">What is your favorite beer style?</label><br>
+        <select name="beerstyle" id="dropdown">
+          <option value="">Select favorite beer style</option>
+          <option value="Lager">Lager</option>
+          <option value="IPA">IPA</option>
+          <option value="Stout">Stout</option>
+          <option value="Porter">Porter</option>
+          <option value="Barleywine">Barleywine</option>  
+        </select><br><br>
+        <label for="1">How many beers do you drink per day?</label><br><input id="1" value="1" type="radio" name="amount">1
+        <label for="2"></label><br><input id="2" value="2" type="radio" name="amount">2
+        <label for="other"></label><br><input id="other" value="other" type="radio" name="amount">No comment<br><br>
+        <label for="store">Where do you buy beer?</label><br><input id="store" value="store" type="checkbox" name="location">Grocery store
+        <label for="bar"></label><br><input id="bar" value="bar" type="checkbox" name="location">Bar
+        <label for="homebrewer"></label><br><input id="homebrewer" value="homebrewer" type="checkbox" name="location">I'm a homebrewer<br><br>
+        <label for="comments">Comments or suggestions?</label><br>
+        <textarea id="comments" name="comments" rows="6" cols="50"></textarea><br>
+        <button id="submit" type="submit">Submit</button> 
+      </form>   
+    </main>  
+  </body>
+</html>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
